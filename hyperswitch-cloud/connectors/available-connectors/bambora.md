@@ -10,7 +10,7 @@ This section gives you an overview of how to make payments via Bambora through H
 
 ![logo\_bambora](https://hyperswitch.io/icons/homePageIcons/logos/bamboraLogo.svg)
 
-Bambora, a Worldline solution, design and operate leading digital payment and transactional solutions that enable sustainable economic growth and reinforce trust and security. To know about more about payment methods supported by Bambora via hyperswitch visit [here](https://hyperswitch.io/pm-list).
+Bambora, a Worldline solution, design and operate leading digital payment and transactional solutions that enable sustainable economic growth and reinforce trust and security. To know about more about payment methods supported by Bambora via hyperswitch click [here](https://hyperswitch.io/pm-list).
 
 ### Activating Bambora via Hyperswitch
 
@@ -21,4 +21,4 @@ Bambora, a Worldline solution, design and operate leading digital payment and tr
 3. The Bambora keys  **Passcode** and **Merchant ID** can be found in your Bambora dashboard.
 4. Select all the payment methods you wish to use Bambora for. Ensure that this is the same as the ones configured on your Bambora dashboard
 
-[Steps](https://app.gitbook.com/o/JKqEWJaaVJcFy28N5Z3d/s/kf7BGdsPkCw9nalhAIlE/\~/changes/388/hyperswitch-cloud/connectors/activate-connector-on-hyperswitch) to activate Bambora on Hyperswitch control center.
+[Steps](https://docs.hyperswitch.io/hyperswitch-cloud/connectors/activate-connector-on-hyperswitch) to activate Bambora on Hyperswitch control center.

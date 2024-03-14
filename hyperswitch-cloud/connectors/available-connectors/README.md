@@ -26,6 +26,10 @@ Here are the available connectors:
 [bambora.md](bambora.md)
 {% endcontent-ref %}
 
+{% content-ref url="boa.md" %}
+[boa.md](boa.md)
+{% endcontent-ref %}
+
 {% content-ref url="bluesnap.md" %}
 [bluesnap.md](bluesnap.md)
 {% endcontent-ref %}
@@ -58,6 +62,10 @@ Here are the available connectors:
 [globalpayments.md](globalpayments.md)
 {% endcontent-ref %}
 
+{% content-ref url="gocardless.md" %}
+[gocardless.md](gocardless.md)
+{% endcontent-ref %}
+
 {% content-ref url="klarna.md" %}
 [klarna.md](klarna.md)
 {% endcontent-ref %}
@@ -86,6 +94,10 @@ Here are the available connectors:
 [payu.md](payu.md)
 {% endcontent-ref %}
 
+{% content-ref url="prophetpay.md" %}
+[prophetpay.md](prophetpay.md)
+{% endcontent-ref %}
+
 {% content-ref url="rapyd.md" %}
 [rapyd.md](rapyd.md)
 {% endcontent-ref %}
@@ -94,8 +106,16 @@ Here are the available connectors:
 [shift4.md](shift4.md)
 {% endcontent-ref %}
 
+{% content-ref url="stripe.md" %}
+[stripe.md](stripe.md)
+{% endcontent-ref %}
+
 {% content-ref url="trustpay.md" %}
 [trustpay.md](trustpay.md)
+{% endcontent-ref %}
+
+{% content-ref url="volt.md" %}
+[volt.md](volt.md)
 {% endcontent-ref %}
 
 {% content-ref url="worldline.md" %}

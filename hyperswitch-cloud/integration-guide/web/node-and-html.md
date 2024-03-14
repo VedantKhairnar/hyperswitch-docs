@@ -83,7 +83,7 @@ Add one empty placeholder `div` to your checkout form for each Widget that you�
 
 ### 2.3 Initialize HyperLoader
 
-Initialize `HyperLoader` onto your app with your publishable key with the `Hyper` constructor. You’ll use `HyperLoader` to create the Unified Checkout and complete the payment on the client. To get an publishable Key please find it [here](https://app.hyperswitch.io/developers).
+Initialize `HyperLoader` onto your app with your publishable key with the `Hyper` constructor. You’ll use `HyperLoader` to create the Unified Checkout and complete the payment on the client. To get a Publishable Key please find it [here](https://app.hyperswitch.io/developers).
 
 ```js
 const hyper = Hyper("YOUR_PUBLISHABLE_KEY");
@@ -173,6 +173,34 @@ async function handleSubmit(e) {
 ```
 
 Also if there are any immediate errors (for example, your customer’s card is declined), `HyperLoader` returns an error. Show that error message to your customer so they can try again.
+
+<details>
+
+<summary>Alternate Implementation: SDK handles the Confirm Button</summary>
+
+For SDK to render the confirm button and handle the confirm payment, in  paymentElementOptions, you can send:
+
+```html
+const unifiedCheckoutOptions = {
+  ...,
+  sdkHandleConfirmPayment: {
+     handleConfirm: true,
+     buttonText: "SDK Pay Now",
+     confirmParams: {
+       return_url: "https://example.com/complete",
+     },
+   },
+};
+```
+
+1. **`handleConfirm (required)`** - A boolean value indicating whether the SDK should handle the confirmation of the payment.
+2. **`confirmParams (required)`** - It’s an object which takes return\_url. return\_url parameter specifies the URL where the user should be redirected after payment confirmation.
+3. **`buttonText (optional)`** -  The text to display on the payment button. \
+   Default value: **Pay Now**
+
+For customization, please follow the [`Customization docs`](https://docs.hyperswitch.io/hyperswitch-cloud/integration-guide/web/customization#id-5.-confirm-button).
+
+</details>
 
 ### 3.2 Display a payment status message
 

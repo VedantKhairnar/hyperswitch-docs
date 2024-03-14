@@ -196,6 +196,87 @@ We support the following locales -
 
 If you need support for locales other than the ones mentioned above, please contact the Hyperswitch team. Now you can test the payments on your app and go-live!
 
+## 5. Confirm Button
+
+The Styling APIs could be used to blend the Confirm Payment Button (handled by SDK) with your app.
+
+| Variable              | Description                                                        |
+| --------------------- | ------------------------------------------------------------------ |
+| buttonBackgroundColor | Sets the background color of the payment button                    |
+| buttonHeight          | Define the height of the payment button                            |
+| buttonWidth           | Specify the width of the payment button                            |
+| buttonBorderRadius    | Adjust the border radius of the payment button for rounded corners |
+| buttonBorderColor     | Sets the color of the border surrounding the payment button        |
+| buttonTextColor       | Define the color of the text displayed on the payment button       |
+| buttonTextFontSize    | Customize the font size of the text on the payment button          |
+| buttonTextFontWeight  | Specify the font weight of the text on the payment button          |
+
+## 6. Handle Saved Payment Methods
+
+### Screen
+
+You can enable/disable saved payment methods screen using the following prop:
+
+```javascript
+var paymentElementOptions = {
+ ...,
+ displaySavedPaymentMethods: true,
+}
+
+<PaymentElement id="payment-element" options={paymentElementOptions} />
+```
+
+### Checkbox
+
+You can stop your users from saving their payment methods using the following prop:
+
+```javascript
+var paymentElementOptions = {
+ ...,
+ displaySavedPaymentMethodsCheckbox: false,
+}
+
+<PaymentElement id="payment-element" options={paymentElementOptions} />
+```
+
+## 7. More Configurations
+
+### Branding
+
+You can decide whether to display the Hyperswitch branding using the `branding` prop
+
+<pre class="language-javascript"><code class="lang-javascript"><strong>var paymentElementOptions = {
+</strong> ...,
+ branding: "never", // choose between "never" and "always"
+}
+
+&#x3C;PaymentElement id="payment-element" options={paymentElementOptions} />
+</code></pre>
+
+### Payment Methods Header Text
+
+Customize the header text for the section displaying available payment methods.
+
+<pre class="language-javascript"><code class="lang-javascript"><strong>var paymentElementOptions = {
+</strong> ...,
+ paymentMethodsHeaderText: "Select Payment Method",
+}
+
+&#x3C;PaymentElement id="payment-element" options={paymentElementOptions} />
+</code></pre>
+
+### Saved Payment Methods Header Text
+
+Customize the header text for the section displaying saved payment methods.
+
+<pre class="language-javascript"><code class="lang-javascript"><strong>var paymentElementOptions = {
+</strong> ...,
+ savedPaymentMethodsHeaderText: "Saved Payment Methods",
+}
+
+&#x3C;PaymentElement id="payment-element" options={paymentElementOptions} />
+</code></pre>
+
 ## Next step:
 
 {% content-ref url="../../payment-methods-setup/" %}

@@ -8,8 +8,6 @@ description: Create your Hyperswitch account and add a payment provider through 
 
 ***
 
-{% embed url="https://www.loom.com/share/a9b2b42fb72e4691a06e6121b330ebe9?sid=7ae483ea-5e9b-4cf4-b490-6cdc3fa45a6b" %}
-
 ## Create a Hyperswitch account <a href="#user-content-create-a-payment" id="user-content-create-a-payment"></a>
 
 In Hyperswitch, payments are processed for a merchant. Hyperswitch is multi-tenant, i.e. a single hyperswitch app server can support multiple merchants.
@@ -164,6 +162,6 @@ curl --location 'http://localhost:8080/account/<your merchant id>/connectors' \
 
 ## Next step:
 
-{% content-ref url="../test-a-payment.md" %}
-[test-a-payment.md](../test-a-payment.md)
+{% content-ref url="../testing/test-a-payment.md" %}
+[test-a-payment.md](../testing/test-a-payment.md)
 {% endcontent-ref %}
